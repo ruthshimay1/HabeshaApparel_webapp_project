@@ -1,0 +1,827 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  /* padding-top: 3rem; */
+  padding-bottom: 3rem;
+  color: #5a5a5a;  
+  overflow-x: hidden;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+
+/*  navigation
+----------------------------------------------------*/
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+/* end */
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-3 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-3 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 2rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+/* rtl:end:remove */
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 42rem) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 70em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+/* __________________________________________________________ */
+
+/* From my style guide => Nesting from main.less */
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+body .h {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+  /* color: #66bfbf; */
+}
+body h1 {
+  font-size: 5.625rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+
+}
+body h2 {
+  font-size: 2.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+
+}
+body h3 {
+  font-size: 1.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+
+}
+
+.infomessage {
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 15px;
+}
+.warning {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 15px;
+}
+.danger {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 15px;
+}
+.success {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+/* buttons */
+
+.my_button {
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #FF988D;
+    border: None;
+    border-radius: 5px;
+    padding: 12px;
+    color: #fff;
+    box-shadow: 1px 1px 2px 2px #FFE7BF;
+       
+  }
+
+  .my_button:hover {
+     background-color:#3AB0FF;
+     transition: 0.7s;
+  }
+
+    /* .hv:hover {
+       background-color:#3AB0FF;
+       transition: 0.7s; */
+  /* } */
+
+  .my_button:active {
+    background-color: #ffbf00;
+}
+
+/* footer */
+
+.footer p {
+  font-size: 1rem;
+  color: #463f3a;
+}
+.footer h5 {
+  font-size: 1.15rem;
+  color: #073b4c;
+}
+.footer h6 {
+  font-size: 1.05rem;
+  /* color: #03045e; */
+}
+
+
+/* drop down menu */
+.dropdown-toggle::after {
+  content: none;
+}
+
+/*_____________________________________________________*/
+/*css for shopping cart*/
+
+/*test shopping cart */
+/**
+* ! Changing default styles of the browser
+**/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  font-family: sans-serif;
+} */
+
+i {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/**
+* ! Navbar STyles are here
+**/
+
+/* .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #212529;
+  color: white;
+  padding: auto, 60px, auto;
+  margin-bottom: 30px;
+} */
+
+.cart {
+  position: relative;
+  background-color: rgb(228, 183, 18);
+  color: #212529;
+  font-size: 30px;
+  /* padding: 5px; */
+  border-radius: 5px;
+  height: 38px;
+}
+
+.cartAmount {
+  position: absolute;
+  top: 3px;
+  right: 7px;
+  font-size: 10px;
+  background-color: red;
+  color: white;
+  padding: 3px;
+  border-radius: 4px;
+}
+
+/**
+* ! Shop items styles are here
+**/
+
+.shop {
+  display: grid;
+  grid-template-columns: repeat(4, 223px);
+  gap: 30px;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .shop {
+    grid-template-columns: repeat(2, 223px);
+  }
+}
+
+@media (max-width: 500px) {
+  .shop {
+    grid-template-columns: repeat(1, 223px);
+  }
+}
+
+.item {
+  border: 0.5px solid gray;
+  border-radius: 6px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 15px;
+}
+
+.price-quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.bi-dash-lg {
+  color: #2c2481;
+}
+
+.bi-plus-lg {
+  color: #263f3f;
+}
+
+/**
+* ! style rules for label and some buttons
+**/
+
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.HomeBtn,
+.checkout,
+.removeAll {
+  background-color: #212529;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.checkout {
+  background-color: pink;
+}
+.removeAll {
+  background-color: blue;
+}
+.bi-x-lg {
+  color: red;
+  font-weight: bold;
+}
+
+/**
+* ! style rules for shopping-cart
+**/
+
+.shopping-cart {
+  display: grid;
+  grid-template-columns: repeat(1, 320px);
+  justify-content: center;
+  gap: 15px;
+}
+
+/**
+* ! style rules for cart-item
+**/
+
+.cart-item {
+  border: 0.1px solid #132020;
+  border-radius: 5px;
+  display: flex;
+}
+
+.title-price-x {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+}
+
+.title-price {
+  display: block;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.17rem;
+}
+
+.cart-item-price {
+  background-color: #213737;
+  color: white;
+  border-radius: 4px;
+  padding: 3px 6px;
+}
+
+.sizing {
+  display: relative;
+  padding-top: 40px;
+}
+
+/* contactus css */
+.btn-solid-reg {
+	display: inline-block;
+	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
+	border: 1px solid #0b36a8;
+	background-color: #0b36a8;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-solid-reg:hover {
+	background-color: transparent;
+	color: #0b36a8; /* needs to stay here because of the color property of a tag */
+	text-decoration: none;
+}
+
+.btn-solid-lg {
+	display: inline-block;
+	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
+	border: 1px solid #0b36a8;
+	background-color: #0b36a8;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-solid-lg:hover {
+	background-color: transparent;
+	color: #0b36a8; /* needs to stay here because of the color property of a tag */
+	text-decoration: none;
+}
+
+.btn-outline-reg {
+	display: inline-block;
+	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
+	border: 1px solid #24262a;
+	background-color: transparent;
+	color: #24262a;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-outline-reg:hover {
+	background-color: #24262a;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.btn-outline-lg {
+	display: inline-block;
+	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
+	border: 1px solid #24262a;
+	background-color: transparent;
+	color: #24262a;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-outline-lg:hover {
+	background-color: #24262a;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.btn-outline-sm {
+	display: inline-block;
+	padding: 1rem 1.5rem 1rem 1.5rem;
+	border: 1px solid #24262a;
+	background-color: transparent;
+	color: #24262a;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-outline-sm:hover {
+	background-color: #24262a;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.form-group {
+	position: relative;
+	margin-bottom: 1.25rem;
+}
+
+.label-control {
+	position: absolute;
+	top: 0.875rem;
+	left: 1.5rem;
+	color: #7d838a;
+	opacity: 1;
+	font-size: 0.875rem;
+	line-height: 1.375rem;
+	cursor: text;
+	transition: all 0.2s ease;
+}
+
+.form-control-input:focus + .label-control,
+.form-control-input.notEmpty + .label-control,
+.form-control-textarea:focus + .label-control,
+.form-control-textarea.notEmpty + .label-control {
+	top: 0.125rem;
+	color: #4d5055;
+	opacity: 1;
+	font-size: 0.75rem;
+	font-weight: 700;
+}
+
+.form-control-input,
+.form-control-select {
+	display: block; /* needed for proper display of the label in Firefox, IE, Edge */
+	width: 100%;
+	padding-top: 1.125rem;
+	padding-bottom: 0.125rem;
+	padding-left: 1.5rem;
+	border: 1px solid #cbcbd1;
+	background-color: #ffffff;
+	color: #4d5055;
+	font-size: 0.875rem;
+	line-height: 1.875rem;
+	transition: all 0.2s;
+	-webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
+}
+
+.form-control-select {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	height: 3.25rem;
+	color: #7d838a;
+}
+
+select {
+    /* you should keep these first rules in place to maintain cross-browser behavior */
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background-image: url('../images/down-arrow.png');
+    background-position: 96% 50%;
+    background-repeat: no-repeat;
+    outline: none;
+}
+
+.form-control-textarea {
+	display: block; /* used to eliminate a bottom gap difference between Chrome and IE/FF */
+	width: 100%;
+	height: 14rem; /* used instead of html rows to normalize height between Chrome and IE/FF */
+	padding-top: 1.5rem;
+	padding-left: 1.3125rem;
+	border: 1px solid #cbcbd1;
+	background-color: #ffffff;
+	color: #4d5055;
+	font-size: 0.875rem;
+	line-height: 1.5rem;
+	transition: all 0.2s;
+}
+
+.form-control-input:focus,
+.form-control-select:focus,
+.form-control-textarea:focus {
+	border: 1px solid #a1a1a1;
+	outline: none; /* Removes blue border on focus */
+}
+
+.form-control-input:hover,
+.form-control-select:hover,
+.form-control-textarea:hover {
+	border: 1px solid #a1a1a1;
+}
+
+.checkbox {
+	font-size: 0.75rem;
+	line-height: 1.25rem;
+}
+
+input[type='checkbox'] {
+	vertical-align: -10%;
+	margin-right: 0.5rem;
+}
+
+.form-control-submit-button {
+	display: inline-block;
+	width: 50%;
+	height: 3.25rem;
+	border: 1px solid #0b36a8;
+	border-radius: 32px;
+	background-color: #0b36a8;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 0;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.form-control-submit-button:hover {
+	border: 1px solid #24262a;
+	background-color: transparent;
+	color: #24262a;
+}
+
+/* Link */
+.newanchor:link {
+  color: #333333;
+  background-color: transparent;
+  text-decoration: none;
+}
+.newanchor:visited {
+  color: #f39d17;
+  background-color: transparent;
+  text-decoration: none;
+}
+.newanchor:hover {
+  /* color: #6E260E; */
+  color:#64b5f6;
+  background-color: transparent;
+  text-decoration: none;
+}
+.newanchor:active {
+  color: #2a2a2a ;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* footer */
+.ft {
+padding-top: -12rem!important;
+padding-bottom: -29rem!important;
+}
+
+
+
+/* buttons */
+
+.second_button {
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #FF988D;
+  border: None;
+  border-radius: 15px;
+  padding: 4px;
+  color: #fff;
+  box-shadow: 1px 1px 2px 2px #FFE7BF;
+
+}
+
+
+/* Link */
+.newanchor:link {
+  color: #333333;
+  background-color: transparent;
+  text-decoration: none;
+}
+.newanchor:visited {
+  color: #f39d17;
+  background-color: transparent;
+  text-decoration: none;
+}
+.newanchor:hover {
+  /* color: #6E260E; */
+  color:#64b5f6;
+  background-color: transparent;
+  text-decoration: none;
+}
+.newanchor:active {
+  color: #2a2a2a ;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.second_button:hover {
+   background-color:#3AB0FF;
+   transition: 0.7s;
+}
+
+  /* .hv:hover {
+     background-color:#3AB0FF;
+     transition: 0.7s; */
+/* } */
+
+
+/* _____ */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+
+
+
+.logo{
+  width: 35;
+  height: 35;
+
+}
+.card-img-top {
+
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.admin_image{
+  width: 100px;
+  object-fit:contain;
+
+}
+
+.cart_img{
+  width: 80px;
+  height: 80px;
+}
+
+.profile_img {    
+  margin: auto;
+  display: block;
+  width: 90%;
+  /* height: 100%; */
+  object-fit: contain;
+
+}
+
+.second_button:active {
+  background-color: #ffbf00;
+}
+
+
+
+
+.first-nav{
+  /* background: white; */
+  color:white;
+}
+
+.second-nav{
+  top: 50px;
+  background-color: #c39797;
+  /* background: mediumturquoise; */
+  color: black;
+}
+
+.cart_total{
+  /* color:darkorange; */
+  color:#ffa500;
+  padding:2px;
+  font-size: 15px;
+}
+
+.bolded { 
+  font-weight:bold;
+  font-weight: 400;
+ }
+
+

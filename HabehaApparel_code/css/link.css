@@ -1,0 +1,21 @@
+
+
+/* #ffbd03 */
+
+
+.social-icon {
+  /* Selector for social icons */
+   
+  fill: #249afa;
+  /* Change this value to whatever color you want */ 
+   
+  transition: fill 0.25s ease;  
+  /* Smooth out the color change transition */
+  }
+   
+  .social-icon:hover {
+  /* When you hover over a social icon */
+   
+  fill: #000000;
+  /* Change its color to something else */
+  }

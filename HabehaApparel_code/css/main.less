@@ -1,0 +1,103 @@
+// Declaring variables
+
+//body
+@body_font-family: 'Montserrat', sans-serif;
+@font-weight: 300;
+
+//headings
+@h_font-family: 'Josefin Sans', sans-serif;
+@h-font-weight: 100;
+@h-font-color: #66BFBF;
+
+//Messages
+@font-weight_info: bold;
+@padding_info: 10px;
+@border-radius_info: 15px;
+
+
+
+body {
+
+    font-family: @body_font-family;
+    font-weight: @font-weight;
+
+  .h{
+      font-family: @h_font-family;
+      font-weight: @h-font-weight;
+      // color:  @h-font-color;
+
+      }
+
+  h1 {
+
+      font-size: 5.625rem;
+      .h();
+
+  }
+
+  h2 {
+     font-size: 2.5rem;
+    .h();
+
+    }
+
+  h3 {
+
+      font-size: 1.5rem;
+     .h();
+
+  }
+
+  }
+
+//Messages
+
+.infomessage {
+
+    font-weight: @font-weight_info;
+    padding: @padding_info;
+    border-radius: @border-radius_info;
+	}
+
+
+.warning {
+    background-color: yellow;
+    color: black;
+  	.infomessage();
+
+}
+
+.danger {
+    background-color: red;
+    color: white;
+    .infomessage()
+
+}
+
+.success {
+    background-color: green;
+    color: white;
+    .infomessage()
+}
+
+// Footer
+//Nesting
+
+.footer {
+
+   p {
+      font-size: 1rem;
+      color:#463f3a;;
+   }
+
+     h5{
+         font-size: 1.15rem;
+ 		 color: #073b4c;
+      }
+
+  	h6 {
+   		 font-size: 1.05rem;
+ 		 color: #03045e;
+ 	 }
+
+   }
